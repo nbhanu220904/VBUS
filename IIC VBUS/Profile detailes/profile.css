@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 0.5s ease;
+}
+header {
+    background-color: #003285;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav {
+    padding: 1rem;
+    text-align: right;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 3rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #2A629A;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+main {
+    padding: 2rem;
+}
+.account-info {
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    width: 50%;
+    padding: 20px;
+}
+.account-info h1 {
+    text-align: center;
+}
+.user-info {
+    display: flex;
+    align-items: flex-start;
+}
+.studentImage {
+    flex: 0 0 300px;
+    margin-right: 20px;
+}
+.studentDetails {
+    flex: 1;
+}
+.user-info p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.navigation-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.9);
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.navigation-buttons button:hover {
+    background-color: rgba(0, 99, 204, 0.9);
+    transform: translateY(-2px);
+}
+.content-section {
+    display: none;
+}
+.content-section.fade-in {
+    animation: fadeInSection 0.5s ease;
+}
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+    background-color: #EFECEC;
+    color: black;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    margin-top:-36px;
+}

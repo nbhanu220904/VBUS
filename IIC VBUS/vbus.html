@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Institute of Technology - College Bus Services</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #003366;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header img {
+        max-width: 100px;
+        margin: 0 auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .container {
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 20%;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    table, th, td {
+        border: 1px solid #dddddd;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    footer {
+        background-color: #003366;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://vishnu.edu.in/images/logo_red.png" alt="Vishnu Institute of Technology Logo">
+        <h1>Vishnu Institute of Technology - College Bus Services</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#fee">Fee Structure</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="fee" onclick="toggleFee('fee')">Fee Structure</div>
+        </div>
+        <div class="content">
+            <section id="introduction">
+                <h2>Welcome to Our College Bus Services</h2>
+                <p>Vishnu Institute of Technology provides a reliable and comprehensive bus service for all students and staff. Our buses are equipped with comfortable seating and air conditioning to ensure a pleasant journey. We are committed to providing safe and punctual transportation to and from the campus.</p>
+            </section>
+
+            <section id="fee">
+                <h3>Bus Fares</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Route No.</th>
+                            <th>Place</th>
+                            <th>Fee per Academic Year (Rs.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td>Narsapuram</td>
+                            <td>30000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Palakollu</td>
+                            <td>27000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Veravasaram</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">2</td>
+                            <td>Narsapuram</td>
+                            <td>29000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Mogaltur</td>
+                            <td>27000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Kalipatnam</td>
+                            <td>25000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Gollavanitippa</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">3</td>
+                            <td>Kaikaluru</td>
+                            <td>28000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Akiveedu</td>
+                            <td>25000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Undi</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">4</td>
+                            <td>Narayanapuram</td>
+                            <td>30000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Ganapavaram</td>
+                            <td>26000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Undi</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">5</td>
+                            <td>Tadepalligudem</td>
+                            <td>26000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Pippara</td>
+                            <td>24000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Garagaparru</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">6</td>
+                            <td>Tanuku</td>
+                            <td>30000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Athili</td>
+                            <td>26000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Korukollu</td>
+                            <td>22000/-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">7</td>
+                            <td>Penugonda</td>
+                            <td>30000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Penumantra</td>
+                            <td>26000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Navuduru</td>
+                            <td>24000/-</td>
+                        </tr>
+                        <tr>
+                            <td>Veeravasaram</td>
+                            <td>22000/-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="faqs">
+                <center><h2>Frequently Asked Questions (FAQs)</h2></center>
+                <div class="faq">
+                    <h3>1. How do I register for the bus service?</h3>
+                    <p>Registration for the bus service can be done during the college admission process. Existing students can contact the administrative office for more information.</p>
+                </div>
+                <div class="faq">
+                    <h3>2. What should I do if I miss the bus?</h3>
+                    <p>If you miss the bus, you can either arrange for your own transportation or catch the bus at the next boarding point, provided it is on the same route.</p>
+                </div>
+                <div class="faq">
+                    <h3>3. Are there any rules for bus conduct?</h3>
+                    <p>Yes, students are expected to maintain discipline and follow the bus rules and regulations to ensure safety and comfort for all passengers.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <center><h2>Contact Information</h2></center>
+                <p>For any queries or assistance regarding the bus services, please feel free to contact our transport coordinator: Dr. Rangarao Orugu.</p>
+                <p>Phone: 8978654259</p>
+                <p>Email: <a href="mailto:transport@vishnu.edu.in">transport@vishnu.edu.in</a></p>
+                <p>Address: Vishnu Institute of Technology, Vishnupur, Bhimavaram, Andhra Pradesh, India</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Vishnu Institute of Technology. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleFee(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

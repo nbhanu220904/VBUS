@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VBus</title>
+    <link rel="stylesheet" href="sty.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <style>
+        /* Optional: Custom styles */
+        .f_widget .f_social_icon a {
+            margin-right: 10px;
+        }
+
+        /* Basic styling for the form */
+        .subscribe-form {
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .subscribe-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #0056b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #sectionHome {
+            background-image: url("vit.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        /* CSS for navbar start Here */
+        .logo {
+            height: 40px;
+            width: 150px;
+            padding-left: 3px;
+            margin: 1px 8px;
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-right: 800px;
+        }
+
+        .navbar-header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: transparent;
+            height: 7vh;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            margin: auto 0;
+        }
+
+        .list li {
+            margin-right: 20px;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .login-btn {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .home-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        .home-page-heading {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .home-btn1,
+        .home-btn2 {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .home-btn1:hover,
+        .home-btn2:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!--Section Container Start Here-->
+    <div id="sectionContainer">
+        <!--Home section Start here-->
+        <div class="sectionHome">
+            <div class="container">
+                <!--Home Section Start Here-->
+                <div id="sectionHome">
+                    <div class="row">
+                        <!--HTML for navbar-->
+                        <header class="header">
+                            <nav class="navbar">
+                                <div class="navbar-header">
+                                    <img src="newlogo.bmp" alt="" class="logo" />
+                                    <!--unordered list to create navbar-->
+                                    <ul class="list">
+                                        <li><a href="#sectionHome">Home</a></li>
+                                        <li><a href="">Profile</a></li>
+                                        <li><a href="">Fee Details</a></li>
+                                        <li><a href="#sectionContactUs">Contact Us</a></li>
+                                        <li><a href=""><button type="submit" class="login-btn">Login</button></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </header>
+                    </div>
+                    <!--Home Body Start here-->
+                    <div class="home-body">
+                        <span class="home-page-heading">Transport</span>
+                        <div class="button-container">
+                            <button type="submit" class="home-btn1"><a href="#busRoutesSection">Explore Route →</a></button>
+                            <button type="submit" class="home-btn2"><a href="#sectionContactUs">Contact US →</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

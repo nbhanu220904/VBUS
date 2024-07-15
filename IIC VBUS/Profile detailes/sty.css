@@ -1,0 +1,2505 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  #sectionHome {
+    background-image: url("vishnucollege.jpg");
+    /* background-color: #161616ca; */
+    /* background-blend-mode: soft-light; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  /*CSS for navbar start Here*/
+  .logo {
+    height: 40px;
+    width: 150px;
+    padding-left: 3px;
+    margin: 1px 8px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-right: 800px;
+  }
+  .navbar-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    height: 7vh;
+    width: 100%;
+    /* border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    height: 10vh;
+    width: 100%;
+    justify-content: end;
+    align-items: start;
+    margin-top: 1%;
+  }
+  .list a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .list li {
+    list-style: none;
+    padding: 5px 15px;
+    font-size: 17px;
+    margin-top: 0;
+  }
+  .list li a {
+    color: #000000;
+    cursor: pointer;
+  }
+  .list li a:hover {
+    color: #000000;
+    cursor: pointer;
+    font-size: 18.2px;
+    transition-duration: 0.5ms;
+    transition: 0.2s;
+    color: #ff4000;
+  }
+  .login-btn {
+    background-color: #ffc400;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: -200px;
+  }
+  .login-btn:hover {
+    background-color: #00aeff;
+    transition: ease-in;
+    transition: 0.2s;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Extra small devices (phones, 0 - 575px) */
+  @media (min-width: 0px) and (max-width: 576px) {
+    .logo {
+      height: 15px;
+      width: 100px;
+      padding-left: 3px;
+      margin: 1px;
+      margin-left: 1px;
+      margin-top: 10px;
+      margin-right: 40px;
+    }
+    .navbar-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-color: transparent;
+      height: 4vh;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      height: 10vh;
+      width: 100%;
+      justify-content: end;
+      align-items: start;
+      margin-top: 1%;
+    }
+    .list a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .list li {
+      list-style: none;
+      padding: 5px;
+      font-size: 10px;
+      margin-top: 0;
+    }
+    .list li a {
+      color: #000000;
+      cursor: pointer;
+      padding: 2px 5px;
+    }
+    .list li a:hover {
+      color: #000000;
+      cursor: pointer;
+      font-size: 11px;
+      transition-duration: 0.5ms;
+      transition: 0.2s;
+      color: #ff4000;
+    }
+    .login-btn {
+      background-color: #ffc400;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 5px;
+      margin-top: -200px;
+      font-size: 11px;
+      color: #ffffff;
+    }
+    .login-btn:hover {
+      background-color: #ff6200;
+      transition: ease-in;
+      transition: 0.2s;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+   
+  }
+  
+  /* Small devices (landscape phones, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+      height: 20px;
+      width: 100px;
+      padding-left: 3px;
+      margin: 1px 8px;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-right: 150px;
+    }
+    .navbar-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-color: transparent;
+      height: 6vh;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      height: 10vh;
+      width: 100%;
+      justify-content: end;
+      align-items: start;
+      margin-top: 1%;
+    }
+    .list a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .list li {
+      list-style: none;
+      padding: 5px 15px;
+      font-size: 12px;
+      margin-top: 0;
+    }
+    .list li a {
+      color: #000000;
+      cursor: pointer;
+    }
+    .list li a:hover {
+      color: #000000;
+      cursor: pointer;
+      font-size: 13px;
+      transition-duration: 0.5ms;
+      transition: 0.2s;
+      color: #ff4000;
+    }
+    .login-btn {
+      background-color: #ffc400;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+      margin-top: -200px;
+    }
+    .login-btn:hover {
+      background-color: #ff6200;
+      transition: ease-in;
+      transition: 0.2s;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+  /* Medium devices (tablets, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 992px) {
+    .logo {
+      height: 40px;
+      width: 150px;
+      padding-left: 3px;
+      margin: 1px 8px;
+      margin-left: 25px;
+      margin-top: 10px;
+      margin-right: 270px;
+    }
+    .navbar-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* background-color: transparent; */
+      height: 7vh;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      height: 10vh;
+      width: 100%;
+      justify-content: end;
+      align-items: start;
+      margin-top: 1%;
+    }
+    .list a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .list li {
+      list-style: none;
+      padding: 5px 15px;
+      font-size: 17px;
+      margin-top: 0;
+    }
+    .list li a {
+      color: #000000;
+      cursor: pointer;
+    }
+    .list li a:hover {
+      color: #000000;
+      cursor: pointer;
+      font-size: 18.2px;
+      transition-duration: 0.5ms;
+      transition: 0.2s;
+      color: #ff4000;
+    }
+    .login-btn {
+      background-color: #ffc400;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-top: -200px;
+    }
+    .login-btn:hover {
+      background-color: #ff6200;
+      transition: ease-in;
+      transition: 0.2s;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+  /* Large devices (desktops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .logo {
+      height: 40px;
+      width: 150px;
+      padding-left: 3px;
+      margin: 1px 8px;
+      margin-left: 25px;
+      margin-top: 10px;
+      margin-right: 400px;
+    }
+    .navbar-header {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      /* background-color: transparent; */
+      height: 5vh;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      height: 8vh;
+      width: 100%;
+      justify-content: end;
+      align-items: start;
+      margin-top: 1%;
+    }
+    .list a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .list li {
+      list-style: none;
+      padding: 5px 15px;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .list li a {
+      color: #000000;
+      cursor: pointer;
+    }
+    .list li a:hover {
+      color: #000000;
+      cursor: pointer;
+      font-size: 18.2px;
+      transition-duration: 0.5ms;
+      transition: 0.2s;
+      color: #ff4000;
+    }
+    .login-btn {
+      background-color: #ffc400;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-top: -200px;
+    }
+    .login-btn:hover {
+      background-color: #ff6200;
+      transition: ease-in;
+      transition: 0.2s;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .logo {
+      height: 40px;
+      width: 150px;
+      padding-left: 3px;
+      margin: 1px 8px;
+      margin-left: 25px;
+      margin-top: 10px;
+      margin-right: 800px;
+    }
+    .navbar-header {
+      background-color: #ffffffae;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background-color: transparent;
+      height: 7vh;
+      width: 100%;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      height: 10vh;
+      width: 100%;
+      justify-content: end;
+      align-items: start;
+      margin-top: 1%;
+    }
+    .list a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .list li {
+      list-style: none;
+      padding: 5px 15px;
+      font-size: 17px;
+      margin-top: 0;
+    }
+    .list li a {
+      color: #000000;
+      cursor: pointer;
+    }
+    .list li a:hover {
+      color: #000000;
+      cursor: pointer;
+      font-size: 18.2px;
+      transition-duration: 0.5ms;
+      transition: 0.2s;
+      color: #ff4000;
+    }
+    .login-btn {
+      background-color: #ffc400;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      margin-top: -200px;
+    }
+    .login-btn:hover {
+      background-color: #ff6200;
+      transition: ease-in;
+      transition: 0.2s;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+    }
+    
+  }
+  
+    
+  /*CSS for nabvar ends here*/
+  
+  /*CSS for home-body section*/
+  .home-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page-heading {
+    align-items: center;
+    color: #ffffff;
+    font-size: 70px;
+    margin-top: 15%;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+  }
+  /*Home page Button Container*/
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .home-btn1 {
+    background-color: #ffc400;
+    border: none;
+    margin: 5px 20px;
+    padding: 15px 25px;
+    font-size: 17px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .home-btn1 a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .home-btn1:hover {
+    cursor: pointer;
+    background-color: #ff9100;
+    transition: 0.2s;
+  }
+  .home-btn1 a:hover {
+    cursor: pointer;
+  }
+  .home-btn2 {
+    background-color: transparent;
+    border: 2px #ffffff solid;
+    margin: 5px 20px;
+    padding: 15px 25px;
+    font-size: 17px;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .home-btn2 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .home-btn2:hover {
+    cursor: pointer;
+    background-color: #38a8f2;
+    transition: 0.2s;
+  }
+  /*End of CSS Home Page Button Section Container*/
+  /*End Of CSS Home Page Container Section*/
+  /*CSS for About BUS FACILITY Section*/
+  .about-section {
+    background-color: #d0dcde;
+    height: 35vh;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-heading {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    max-width: 50vw;
+    color: #000000;
+  }
+  .underscore {
+    font-weight: bold;
+    font-size: 35px;
+    color: #235471;
+  }
+  .about-para {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 70vw;
+    margin-top: 30px;
+    color: #4a535d;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Extra small devices (phones, 0 - 575px) */
+  @media (max-width: 575px) {
+    .about-section {
+      height: auto;
+      padding: 20px;
+    }
+    .about-heading {
+      font-size: 24px;
+      max-width: 90vw;
+      text-align: center;
+    }
+    .underscore {
+      font-size: 28px;
+    }
+    .about-para {
+      font-size: 16px;
+      max-width: 90vw;
+      text-align: center;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .about-section {
+      height: auto;
+      padding: 20px;
+    }
+    .about-heading {
+      font-size: 26px;
+      max-width: 80vw;
+      text-align: center;
+    }
+    .underscore {
+      font-size: 30px;
+    }
+    .about-para {
+      font-size: 18px;
+      max-width: 80vw;
+      text-align: center;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .about-section {
+      height: 30vh;
+      padding: 20px;
+    }
+    .about-heading {
+      font-size: 28px;
+      max-width: 60vw;
+    }
+    .underscore {
+      font-size: 32px;
+    }
+    .about-para {
+      font-size: 18px;
+      max-width: 70vw;
+    }
+  }
+  
+  /* Large devices (desktops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .about-section {
+      height: 35vh;
+      padding: 15px;
+    }
+    .about-heading {
+      font-size: 30px;
+      max-width: 50vw;
+    }
+    .underscore {
+      font-size: 35px;
+    }
+    .about-para {
+      font-size: 20px;
+      max-width: 70vw;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .about-section {
+      height: 35vh;
+      padding: 10px 15px;
+    }
+    .about-heading {
+      font-size: 30px;
+      max-width: 50vw;
+    }
+    .underscore {
+      font-size: 35px;
+    }
+    .about-para {
+      font-size: 20px;
+      max-width: 70vw;
+    }
+  }
+  
+  /*End Of CSS About Section*/
+  /*why-travel-section*/
+  .why-travel-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #ffffff;
+  }
+  .bus-image {
+    height: 350px;
+    margin: 10px;
+    margin-left: 200px;
+  }
+  .why-travel-heading {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  .security-logo {
+    height: 40px;
+    margin: 5px;
+    margin-top: 10px;
+  }
+  .why-section-points {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    color: #000000;
+    font-weight: bold;
+  }
+  .why-section {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    max-width: 30vw;
+  }
+  .note {
+    font-size: 20px;
+    margin-left: 65px;
+    margin-top: 20px;
+    color: #72777d;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Extra small devices (phones, 0 - 575px) */
+  @media (max-width: 575px) {
+    .why-travel-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .bus-image {
+      height: 200px;
+      margin-left: 0;
+    }
+    .why-travel-heading {
+      font-size: 28px;
+      text-align: center;
+    }
+    .security-logo {
+      height: 30px;
+    }
+    .why-section-points {
+      font-size: 16px;
+      margin-left: 10px;
+      text-align: center;
+    }
+    .why-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 90vw;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 16px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .why-travel-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .bus-image {
+      height: 250px;
+      margin-left: 0;
+    }
+    .why-travel-heading {
+      font-size: 32px;
+      text-align: center;
+    }
+    .security-logo {
+      height: 35px;
+    }
+    .why-section-points {
+      font-size: 18px;
+      margin-left: 10px;
+      text-align: center;
+    }
+    .why-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 80vw;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .why-travel-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .bus-image {
+      height: 300px;
+      margin-left: 0;
+    }
+    .why-travel-heading {
+      font-size: 36px;
+      text-align: center;
+    }
+    .security-logo {
+      height: 35px;
+    }
+    .why-section-points {
+      font-size: 18px;
+      margin-left: 10px;
+      text-align: center;
+    }
+    .why-section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 70vw;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 18px;
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Large devices (desktops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .why-travel-section {
+      flex-direction: row;
+      height: 70vh;
+    }
+    .bus-image {
+      height: 300px;
+      margin-left: 100px;
+    }
+    .why-travel-heading {
+      font-size: 38px;
+    }
+    .security-logo {
+      height: 35px;
+    }
+    .why-section-points {
+      font-size: 20px;
+      margin-left: 15px;
+    }
+    .why-section {
+      flex-direction: row;
+      align-items: center;
+      max-width: 40vw;
+    }
+    .note {
+      font-size: 18px;
+      margin-left: 45px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .why-travel-section {
+      flex-direction: row;
+      height: 80vh;
+    }
+    .bus-image {
+      height: 350px;
+      margin-left: 200px;
+    }
+    .why-travel-heading {
+      font-size: 42px;
+    }
+    .security-logo {
+      height: 40px;
+    }
+    .why-section-points {
+      font-size: 20px;
+      margin-left: 15px;
+    }
+    .why-section {
+      flex-direction: row;
+      align-items: center;
+      max-width: 30vw;
+    }
+    .note {
+      font-size: 20px;
+      margin-left: 65px;
+    }
+  }
+  
+  /*End Of CSS Why Travel Section*/
+  /*CSS for bus-route-section start here*/
+  #busRoutesSection {
+    background-color: #ffffff;
+    height: 90vh;
+  }
+  .bus-route-section {
+    background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+    background-color: #161616e1;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+  }
+  /*Card Section Start Here*/
+  .card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    background-color: transparent;
+    position: relative;
+    top: 230px;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #38a8f2;
+    color: #ffffff;
+    height: 40vh;
+    width: 20%;
+    margin-top: 15px;
+    padding: 15px 35px;
+    border-radius: 2px;
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  .card1:hover {
+    background-color: #38a8f2d0;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #6ec5ff;
+    height: 40vh;
+    width: 20%;
+    margin-top: 15px;
+    padding: 15px 35px;
+    border-radius: 2px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .card2:hover {
+    background-color: #6ec5ffdd;
+  }
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #38a8f2;
+    height: 40vh;
+    width: 20%;
+    margin-top: 15px;
+    padding: 15px 35px;
+    border-radius: 2px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .card3:hover {
+    background-color: #38a8f2d0;
+  }
+  .engineering {
+    font-size: 30px;
+    text-align: center;
+  }
+  .pharmacy {
+    font-size: 30px;
+    text-align: center;
+  }
+  .degree {
+    font-size: 30px;
+    text-align: center;
+  }
+  .engineering-btn {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    margin-top: 120px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border: 0.5px #ffffff solid;
+  }
+  .engineering-btn a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .engineering-btn:hover {
+    background-color: #ff9317;
+  }
+  .pharmacy-btn {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    margin-top: 153px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border: 0.5px #ffffff solid;
+  }
+  .pharmacy-btn a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .pharmacy-btn:hover {
+    background-color: #ff9317;
+  }
+  .degree-btn {
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    margin-top: 150px;
+    padding-bottom: 10px;
+    margin-left: 70px;
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border: 0.5px #ffffff solid;
+  }
+  .degree-btn a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .degree-btn:hover {
+    background-color: #ff9317;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Extra small devices (phones, 0 - 575px) */
+  @media (min-width: 0px) and (max-width: 576px) {
+    #busRoutesSection {
+      background-color: #ffffff;
+      height: 60vh;
+    }
+    .bus-route-section {
+      background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+      background-color: #161616e1;
+      background-blend-mode: soft-light;
+      background-size: cover;
+      background-position: center;
+      height: 30vh;
+    }
+  
+    .card-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      background-color: transparent;
+      position: relative;
+      top: 130px;
+    }
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      color: #ffffff;
+      height: 20vh;
+      width: 15%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .card1:hover {
+      background-color: #38a8f2d0;
+    }
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #6ec5ff;
+      height: 20vh;
+      width: 15%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card2:hover {
+      background-color: #6ec5ffdd;
+    }
+    .card3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      height: 20vh;
+      width: 15%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card3:hover {
+      background-color: #38a8f2d0;
+    }
+    .engineering {
+      font-size: 15px;
+      text-align: center;
+    }
+    .pharmacy {
+      font-size: 15px;
+      text-align: center;
+    }
+    .degree {
+      font-size: 15px;
+      text-align: center;
+    }
+    .engineering-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 40px;
+     margin-left: -10px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .engineering-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .engineering-btn:hover {
+      background-color: #ff9317;
+    }
+    .pharmacy-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 75px;
+     margin-left: -10px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .pharmacy-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pharmacy-btn:hover {
+      background-color: #ff9317;
+    }
+    .degree-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 75px;
+     margin-left: -10px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .degree-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .degree-btn:hover {
+      background-color: #ff9317;
+    }
+    
+    
+  }
+  
+  /* Small devices (landscape phones, 576px - 767px) */
+  @media (min-width: 576px) and (max-width: 767px) {
+    #busRoutesSection {
+      background-color: #ffffff;
+      height: 60vh;
+    }
+    .bus-route-section {
+      background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+      background-color: #161616e1;
+      background-blend-mode: soft-light;
+      background-size: cover;
+      background-position: center;
+      height: 30vh;
+    }
+  
+    .card-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      background-color: transparent;
+      position: relative;
+      top: 130px;
+    }
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      color: #ffffff;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .card1:hover {
+      background-color: #38a8f2d0;
+    }
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #6ec5ff;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card2:hover {
+      background-color: #6ec5ffdd;
+    }
+    .card3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card3:hover {
+      background-color: #38a8f2d0;
+    }
+    .engineering {
+      font-size: 15px;
+      text-align: center;
+    }
+    .pharmacy {
+      font-size: 15px;
+      text-align: center;
+    }
+    .degree {
+      font-size: 15px;
+      text-align: center;
+    }
+    .engineering-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 40px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .engineering-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .engineering-btn:hover {
+      background-color: #ff9317;
+    }
+    .pharmacy-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 58px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .pharmacy-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pharmacy-btn:hover {
+      background-color: #ff9317;
+    }
+    .degree-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 57px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .degree-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .degree-btn:hover {
+      background-color: #ff9317;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #busRoutesSection {
+      background-color: #ffffff;
+      height: 60vh;
+    }
+    .bus-route-section {
+      background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+      background-color: #161616e1;
+      background-blend-mode: soft-light;
+      background-size: cover;
+      background-position: center;
+      height: 30vh;
+    }
+  
+    .card-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      background-color: transparent;
+      position: relative;
+      top: 130px;
+    }
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      color: #ffffff;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .card1:hover {
+      background-color: #38a8f2d0;
+    }
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #6ec5ff;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card2:hover {
+      background-color: #6ec5ffdd;
+    }
+    .card3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      height: 20vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card3:hover {
+      background-color: #38a8f2d0;
+    }
+    .engineering {
+      font-size: 15px;
+      text-align: center;
+    }
+    .pharmacy {
+      font-size: 15px;
+      text-align: center;
+    }
+    .degree {
+      font-size: 15px;
+      text-align: center;
+    }
+    .engineering-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 40px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .engineering-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .engineering-btn:hover {
+      background-color: #ff9317;
+    }
+    .pharmacy-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 58px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .pharmacy-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pharmacy-btn:hover {
+      background-color: #ff9317;
+    }
+    .degree-btn {
+      background-color: transparent;
+      width: 100px;
+      height: 31px;
+      margin-top: 57px;
+     margin-left: 7px;
+      color: #ffffff;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .degree-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .degree-btn:hover {
+      background-color: #ff9317;
+    }
+  }
+  
+  /* Large devices (desktops, 992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1200px) {
+    #busRoutesSection {
+      background-color: #ffffff;
+      height: 60vh;
+    }
+    .bus-route-section {
+      background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+      background-color: #161616e1;
+      background-blend-mode: soft-light;
+      background-size: cover;
+      background-position: center;
+      height: 35vh;
+    }
+  
+    .card-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      background-color: transparent;
+      position: relative;
+      top: 200px;
+    }
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      color: #ffffff;
+      height: 30vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .card1:hover {
+      background-color: #38a8f2d0;
+    }
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #6ec5ff;
+      height: 30vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card2:hover {
+      background-color: #6ec5ffdd;
+    }
+    .card3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      height: 30vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card3:hover {
+      background-color: #38a8f2d0;
+    }
+    .engineering {
+      font-size: 35px;
+      text-align: center;
+    }
+    .pharmacy {
+      font-size: 35px;
+      text-align: center;
+    }
+    .degree {
+      font-size: 35px;
+      text-align: center;
+    }
+    .engineering-btn {
+      background-color: transparent;
+      width: 200px;
+      height: 40px;
+      margin-top: 100px;
+     margin-left: 10px;
+      color: #ffffff;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .engineering-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .engineering-btn:hover {
+      background-color: #ff9317;
+    }
+    .pharmacy-btn {
+      background-color: transparent;
+      width: 200px;
+      height: 40px;
+      margin-top: 180px;
+     margin-left: 10px;
+      color: #ffffff;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .pharmacy-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pharmacy-btn:hover {
+      background-color: #ff9317;
+    }
+    .degree-btn {
+      background-color: transparent;
+      width: 200px;
+      height: 40px;
+      margin-top: 180px;
+     margin-left: 10px;
+      color: #ffffff;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .degree-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .degree-btn:hover {
+      background-color: #ff9317;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    #busRoutesSection {
+      background-color: #ffffff;
+      height: 90vh;
+    }
+    .bus-route-section {
+      background-image: url("https://www.srivishnu.edu.in/wp-content/uploads/2018/07/banner_image-1.jpg");
+      background-color: #161616e1;
+      background-blend-mode: soft-light;
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+    }
+  
+    .card-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+      background-color: transparent;
+      position: relative;
+      top: 200px;
+    }
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      color: #ffffff;
+      height: 50vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .card1:hover {
+      background-color: #38a8f2d0;
+    }
+    .card2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #6ec5ff;
+      height: 50vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card2:hover {
+      background-color: #6ec5ffdd;
+    }
+    .card3 {
+      display: flex;
+      flex-direction: column;
+      background-color: #38a8f2;
+      height: 50vh;
+      width: 20%;
+      margin-top: 15px;
+      padding: 15px 35px;
+      border-radius: 2px;
+      margin-top: 0px;
+      font-size: 15px;
+      color: #ffffff;
+    }
+    .card3:hover {
+      background-color: #38a8f2d0;
+    }
+    .engineering {
+      font-size: 35px;
+      text-align: center;
+    }
+    .pharmacy {
+      font-size: 35px;
+      text-align: center;
+    }
+    .degree {
+      font-size: 35px;
+      text-align: center;
+    }
+    .engineering-btn {
+      background-color: transparent;
+      margin-top: 180px;
+      margin-left: 70px;
+      color: #ffffff;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .engineering-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .engineering-btn:hover {
+      background-color: #ff9317;
+    }
+    .pharmacy-btn {
+      background-color: transparent;
+      margin-top: 220px;
+      margin-left: 70px;
+      color: #ffffff;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .pharmacy-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .pharmacy-btn:hover {
+      background-color: #ff9317;
+    }
+    .degree-btn {
+      background-color: transparent;
+      margin-top: 220px;
+      margin-left: 70px;
+      color: #ffffff;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      border-color: #ffffff;
+      border-radius: 5px;
+      border: 0.5px #ffffff solid;
+    }
+    .degree-btn a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .degree-btn:hover {
+      background-color: #ff9317;
+    }
+  }
+  
+  /*Contact us section*/
+  #sectionContactUs {
+    background-color: #d0dcde;
+    height: 80vh;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us-heading {
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .contact-section-img {
+    height: 350px;
+    position: absolute;
+    left: 50px;
+  }
+  .contact-us-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .contact-details {
+    height: 50vh;
+    width: 50vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+  }
+  .transport-heading {
+    font-size: 30px;
+    padding: 5px;
+  }
+  .address {
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .name {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .contact {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .contact i {
+    color: #235471;
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  /*Responsive CSS*/
+  
+  /* Extra Large Devices (1200px and above) */
+  @media (min-width: 1200px) {
+    #sectionContactUs {
+      background-color: #d0dcde;
+      height: 80vh;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-us-heading {
+      font-size: 35px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .contact-section-img {
+      height: 350px;
+      position: absolute;
+      left: 90px;
+    }
+    .contact-us-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .contact-details {
+      height: 50vh;
+      width: 50vw;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15%;
+    }
+    .transport-heading {
+      font-size: 30px;
+      padding: 5px;
+    }
+    .address {
+      font-size: 18px;
+      margin-top: 5px;
+      padding: 5px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .name {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .contact {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .contact i {
+      color: #235471;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+    
+    }
+    
+    /* Large Devices (992px to 1199px) */
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #sectionContactUs {
+        background-color: #d0dcde;
+        height: 80vh;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-us-heading {
+        font-size: 35px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .contact-section-img {
+        height: 250px;
+        position: absolute;
+        left: 50px;
+      }
+      .contact-us-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .contact-details {
+        height: 30vh;
+        width: 60vw;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+      }
+      .transport-heading {
+        font-size: 35px;
+        padding: 5px;
+      }
+      .address {
+        font-size: 18px;
+        margin-top: 5px;
+        padding: 5px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .name {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .contact {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .contact i {
+        color: #235471;
+        margin-top: 5px;
+        margin-right: 15px;
+      }
+      
+    }
+      
+      
+    /* Medium Devices (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #sectionContactUs {
+      background-color: #d0dcde;
+      height: 80vh;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-us-heading {
+      font-size: 35px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .contact-section-img {
+      height: 250px;
+      position: absolute;
+      left: 50px;
+    }
+    .contact-us-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .contact-details {
+      height: 50vh;
+      width: 70vw;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 30%;
+    }
+    .transport-heading {
+      font-size: 30px;
+      padding: 5px;
+    }
+    .address {
+      font-size: 18px;
+      margin-top: 5px;
+      padding: 5px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .name {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .contact {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .contact i {
+      color: #235471;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+    }
+    /* Small Devices (576px to 767px) */
+    @media (min-width: 576px) and (max-width: 767px) {
+      #sectionContactUs {
+        background-color: #d0dcde;
+        height: 80vh;
+        padding: 20px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-us-heading {
+        font-size: 35px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .contact-section-img {
+        height: 180px;
+        position: absolute;
+        left: 20px;
+      }
+      .contact-us-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .contact-details {
+        height: 40vh;
+        width: 70vw;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 28%;
+      }
+      .transport-heading {
+        font-size: 30px;
+        padding: 5px;
+      }
+      .address {
+        font-size: 18px;
+        margin-top: 5px;
+        padding: 5px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .name {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .contact {
+        font-size: 20px;
+        padding: 5px;
+      }
+      .contact i {
+        color: #235471;
+        margin-top: 5px;
+        margin-right: 15px;
+      }
+    }
+    
+    /* Extra Small Devices (up to 575px) */
+    @media (max-width: 575px) {
+      #sectionContactUs {
+        padding: 5px 10px;
+      }
+      .contact-us-heading {
+        font-size: 24px;
+      }
+      .contact-section-img {
+        height: 200px;
+        position: static;
+        margin-bottom: 15px;
+      }
+      .contact-us-container {
+        flex-direction: column;
+        margin-top: 15px;
+      }
+      .contact-details {
+        height: auto;
+        width: 90vw;
+        padding: 10px;
+      }
+      .transport-heading {
+        font-size: 20px;
+      }
+      .address, .name, .contact {
+        font-size: 12px;
+      }
+    }
+    
+  /*CSS for Bus Routes*/
+  header {
+    background: white;
+    color: black;
+    padding: 1em;
+    display: flex;
+    font-family: "Times New Roman", Times, serif;
+  }
+  header h1 {
+    margin-left: 150px;
+    margin-top: 15px;
+  }
+  .img-logo {
+    height: 70px;
+    width: 250px;
+    margin: 10px;
+  }
+  .bus-routes-container {
+    padding: 20px;
+    display: flex;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .sidebar {
+    width: 25%;
+    padding-right: 20px;
+  }
+  .content {
+    width: 75%;
+  }
+  h2,
+  h3 {
+    color: #333;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  ul,
+  ol {
+    margin-bottom: 1em;
+  }
+  ul li,
+  ol li {
+    margin-bottom: 0.5em;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: lightgray;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  section {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .faq h3 {
+    margin-top: 0;
+  }
+  .testimonial {
+    margin-bottom: 1em;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+  }
+  .contact p {
+    margin: 0.5em 0;
+  }
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+  }
+  .route {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+  }
+  .route:hover,
+  .route.active {
+    background-color: #ddd;
+  }
+  .route-details {
+    display: none;
+  }
+  .route-details.active {
+    display: block;
+  }
+  
+  /*CSS footer section*/
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  body {
+    background: #fbfbfd;
+  }
+  
+  .new_footer_area {
+    background: #fbfbfd;
+  }
+  .form-control-memail{
+        border-radius: 5px;
+        padding: 10px 30px;
+        border: none;
+        background-color: #e7e7e796;
+  }
+  .btn{
+    margin-left: 15px;
+    padding: 10px 25px;
+  }
+  .new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+  }
+  
+  .footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+  }
+  
+  .new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+  }
+  
+  .new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+  }
+  
+  .btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+    
+  }
+  
+  .btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  a:hover,
+  a:focus,
+  .btn:hover,
+  .btn:focus,
+  button:hover,
+  button:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  .f_social_icon a {
+    margin-right: 10px; /* Adjust spacing between icons */
+    text-decoration: none;
+  }
+  
+  
+  .new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+  }
+  
+  .new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+    list-style-type: none;
+  }
+  .new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+    text-decoration: none; 
+    
+  }
+  
+  .f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+  }
+  
+  .f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+  }
+  
+  .new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+  }
+  
+  .f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  .ti-facebook:before {
+    content: "\e741";
+  }
+  
+  .ti-twitter-alt:before {
+    content: "\e74b";
+  }
+  
+  .ti-vimeo-alt:before {
+    content: "\e74a";
+  }
+  
+  .ti-pinterest:before {
+    content: "\e731";
+  }
+  
+  .btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+  }
+  
+  .new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: white;
+  }
+  
+  .new_footer_top .f_social_icon a+a{
+    margin-left: 4px;
+  }
+  
+  .new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+  }
+  
+  .f_600 {
+    font-weight: 600;
+  }
+  
+  .f_size_18 {
+    font-size: 18px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #4b505e;
+  }
+  
+  .new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+  }
+  .f-title{
+    margin-left: 25%;
+  }
+  
+  .new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+  }
+  
+  .new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+  }
+  
+  .new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+    background-size: 100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+  }
+  
+  
+  
+  @-moz-keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+  
+    100% {
+        left: 100%;
+    }
+  }
+  
+  @-webkit-keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+  
+    100% {
+        left: 100%;
+    }
+  }
+  
+  @keyframes myfirst {
+    0% {
+        left: -25%;
+    }
+  
+    100% {
+        left: 100%;
+    }
+  }
+  
+  /*************footer End*****************/

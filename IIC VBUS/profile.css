@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 0.5s ease;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.9); /* Adjust background color opacity as needed */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: rgba(248, 249, 250, 0.9); /* Adjust background color opacity as needed */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 2rem;
+    height: 60vh;
+}
+
+.account-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Adjust background color opacity as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-info h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.user-info {
+    margin-bottom: 2rem;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.navigation-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.9); /* Adjust background color opacity as needed */
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: rgba(0, 99, 204, 0.9); /* Adjust background color opacity as needed */
+    transform: translateY(-2px);
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.fade-in {
+    animation: fadeInSection 0.5s ease;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fee-receipt {
+    background-color: white;
+    border: 1px dashed #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.fee-receipt:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fee-receipt::before,
+.fee-receipt::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px dashed #333;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+}
+
+.fee-receipt::before {
+    left: -6px;
+}
+
+.fee-receipt::after {
+    right: -6px;
+}
+
+.fee-receipt h4 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.fee-receipt p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: rgba(248, 249, 250, 0.9); /* Adjust background color opacity as needed */
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+button:hover.stars{
+        display:block;
+        filter:drop-shadow(0 0 10px #fffdef);
+}

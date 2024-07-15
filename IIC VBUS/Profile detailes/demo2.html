@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="demo2.css">
+</head>
+<body>
+    <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <!-- <p>LOGO.</p> -->
+            </div>
+            <div class="header-image">
+                <img
+                  src="https://vishnu.ac.in/collegeimages/title_head.jpg"
+                  alt=""
+                  class="header-img"
+                  style="height: 15vh; width: 60vw"
+                />
+              </div>
+            <div class="nav-button">
+                <button id="employeeLoginBtn" class="btn white-btn" onclick="showForm('employee')">Employee Login</button>
+                <button id="studentLoginBtn" class="btn" onclick="showForm('student')">Student Login</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+    </nav>
+    <!---------form---------->
+    <div class="form-box">
+        <!----------login form-->
+        <div class="Elogin-container" id="Elogin">
+            <div class="top">
+                <!-- <span> Don't have an account?<a href='#' onclick="register()">Sign Up</a></span> -->
+                <header id="formHeader">Employee Login</header>
+            </div>
+            <form>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Username or Email" id="username">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Password" id="password" >
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                </div>
+                <!-- Move the button inside the form -->
+                <div class="input-box">
+                    <button type="submit" class="submit" id="login-btn">Sign In</button>
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot Password?</a></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!---------registration form-->
+        <div class="Slogin-container" id="Slogin">
+            <div class="top">
+                <!-- <span> Have an account?<a href='#' onclick="login()">Login</a></span> -->
+                <header>Student Login</header>
+            </div>
+            <form>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Regd.No" id="registerUsername">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Password" id="registerPassword" >
+                        <i class="bx bx-lock-alt"></i>
+                    </div>
+                </div>
+                <!-- Move the button inside the form -->
+                <div class="input-box">
+                    <button type="submit" class="submit" id="register-btn">Sign Up</button>
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot Password?</a></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="demo2.js"></script>
+</body>
+</html>
+<div class="register-container" id="register">
+    <div class="top">
+        <header>Student Login</header>
+    </div>
+    <div class="two-forms">
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Username or Email" id="username">
+            <i class="bx bx-user"></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password" id="password" >
+            <i class="bx bx-lock-alt"></i>
+        </div>
+    </div>
+    <!-- Move the button inside the form -->
+    <div class="input-box">
+        <button type="submit" class="submit" id="login-btn">Sign In</button>
+    </div>
+    <div class="two-col">
+        <div class="one">
+            <input type="checkbox" id="login-check">
+            <label for="login-check">Remember Me</label>
+        </div>
+        <div class="two">
+            <label><a href="#">Forgot Password?</a></label>
+        </div>
+    </div>
+</div>

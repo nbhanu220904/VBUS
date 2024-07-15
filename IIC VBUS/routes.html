@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/iic3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Institute of Technology - College Bus Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: white;
+            color: black;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header img {
+            width: 50px;
+            height: auto;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            padding-right: 20px;
+        }
+        .content {
+            width: 75%;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        ul, ol {
+            margin-bottom: 1em;
+        }
+        ul li, ol li {
+            margin-bottom: 0.5em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: lightgray;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        section {
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .faq h3 {
+            margin-top: 0;
+        }
+        .testimonial {
+            margin-bottom: 1em;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 5px solid #ccc;
+        }
+        .contact p {
+            margin: 0.5em 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
+        .route {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f2f2f2;
+            margin-bottom: 5px;
+        }
+        .route:hover, .route.active {
+            background-color: #ddd;
+        }
+        .route-details {
+            display: none;
+        }
+        .route-details.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./Vishnu Institute of Technology - College Bus Services_files/logo2.png" alt="Vishnu Institute of Technology Logo">
+        <h1>Vishnu Institute of Technology - College Bus Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="route" onclick="toggleRoute(&#39;route1&#39;)">Route 1: Narsapuram - Palakollu</div>
+            <div class="route" onclick="toggleRoute(&#39;route2&#39;)">Route 2: Narsapuram - Mogaltur</div>
+            <div class="route" onclick="toggleRoute(&#39;route3&#39;)">Route 3: Kaikaluru - Akiveedu</div>
+            <div class="route" onclick="toggleRoute(&#39;route4&#39;)">Route 4: Narayanapuram - Ganapavaram</div>
+            <div class="route" onclick="toggleRoute(&#39;route5&#39;)">Route 5: Tadepalligudem - Pippara</div>
+            <div class="route" onclick="toggleRoute(&#39;route6&#39;)">Route 6: Tanuku - Attili</div>
+            <div class="route" onclick="toggleRoute(&#39;route7&#39;)">Route 7: Penugonda - Navuduru</div>
+        </div>
+        <div class="content">
+            <section id="introduction">
+                <h2>Welcome to Our College Bus Services</h2>
+                <p>Vishnu Institute of Technology provides a reliable and comprehensive bus service for all students and staff. Our buses are equipped with comfortable seating and air conditioning to ensure a pleasant journey. We are committed to providing safe and punctual transportation to and from the campus.</p>
+            </section>
+
+            <section id="routes">
+                <center><h2>Bus Routes</h2></center>
+                <p>Our buses cover a wide range of routes to ensure easy accessibility for all students and staff.<br></p>
+                <div id="route1" class="route-details">
+                    <h3>Route 1 - Narsapuram - Palakollu</h3>
+                    <h4>Driver Name:P. Taraka Ramanjaneyulu<br>
+                        Contact Number:7095884366<br>
+                        Faculty Incharge:Mr.S.V.S.N.Murthy<br>
+                        Contact Number:9492775442<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Narsapuram</td>
+                                <td>7:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Digamarru</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Palakollu Busstand</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Baggeswaram</td>
+                                <td>7:40 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Lankalakoderu</td>
+                                <td>7:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Veeravasaram</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Srungavruksham</td>
+                                <td>8:05 AM</td>
+                            </tr>
+                            <tr>
+                                <td>pennada</td>
+                                <td>8:10 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Bhimavaram Bus Depot</td>
+                                <td>8:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:45 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="route2" class="route-details">
+                    <h3>Route 2 - Narsapuram - Mogaltur</h3>
+                    <h4>Driver Name:G.Nagesh Babu<br>
+                        Contact Number:9676623977<br>
+                        Faculty Incharge:Ms.D S B N S Rekha<br>
+                        Contact Number:7733881992<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Narsapuram Busstand</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Peechu Palem Road</td>
+                                <td>7:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td>ONGC</td>
+                                <td>7:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Swarnandra College Road</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Mogaltur Road</td>
+                                <td>7:35 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Muthyalapalli</td>
+                                <td>7:40 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Kalipatnam</td>
+                                <td>7:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Nagidi Palem Bunk</td>
+                                <td>7:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Toka Tippa Center</td>
+                                <td>7:55 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Gollavani Tippa</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Government Hostipal Road</td>
+                                <td>8:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:40 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="route3" class="route-details">
+                    <h3>Route 3 - Kaikaluru - Akiveedu</h3>
+                    <h4>Driver Name:Janu<br>
+                        Contact Number:6305170160<br>
+                        Faculty Incharge:<br>
+                        Contact Number:<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kaikaluru</td>
+                                <td>6:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Bhujabalapatnam</td>
+                                <td>7:05 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Pallevada</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Akividu</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Cherukuwada</td>
+                                <td>8:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Undi</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:20 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="route4" class="route-details">
+                    <h3>Route 4 - Narayanapuram - Ganapavaram</h3>
+                    <h4>Driver Name:Balu<br>
+                        Contact Number:8179510355<br>
+                        Faculty Incharge:Mr.v.Ramanjaneyulu<br>
+                        Contact Number:9985529530<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Narayanapuram</td>
+                                <td>6:40 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Rachuru</td>
+                                <td>7:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Nidamarru</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Buvvanapalli</td>
+                                <td>7:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Ganapavaram</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Saripalli</td>
+                                <td>7:35 AM</td>
+                            </tr>
+                            <tr>
+                                <td>kolamuru</td>
+                                <td>7:45 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Undi</td>
+                                <td>7:55 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:10 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="route5" class="route-details">
+                    <h3>Route 5 - Tadepalligudem - Pippara</h3>
+                    <h4>Driver Name:J.Satish<br>
+                        Contact Number:9014798962<br>
+                        Faculty Incharge:Mr.MD.Habibullah<br>
+                        Contact Number:7989240639<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Veerampalem Cross Road</td>
+                                <td>7:05 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Tadepalligudem Bus Stand</td>
+                                <td>7:10 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Narayana Shopping Mall</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Seshmahal Theater</td>
+                                <td>7:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Opp Modern Cafe</td>
+                                <td>7:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Mudunurupadu</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Pentapadu</td>
+                                <td>7:35 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Pentapadu Center</td>
+                                <td>7:40 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Aakutheega padu</td>
+                                <td>7:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Pipara</td>
+                                <td>7:55 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Kesavaram</td>
+                                <td>8:05 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:20 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="route6" class="route-details">
+                    <h3>Route 6 - Tanuku - Attili</h3>
+                    <h4>Driver Name:Trimurthulu<br>
+                        Contact Number:9000426900<br>
+                        Faculty Incharge:Mrs.K.Padma Pavani & Mrs.G.R.Bharathi<br>
+                        Contact Number:6300993391 & 9848644479<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tanuku Bellam Market</td>
+                                <td>6:40 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Narendra Center</td>
+                                <td>6:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Sugar Factory</td>
+                                <td>7:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Relangi</td>
+                                <td>7:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Attili</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Korukollu</td>
+                                <td>7:50 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Mogallu</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:15 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="route7" class="route-details">
+                    <h3>Route 7 - Penugonda - Navuduru</h3>
+                    <h4>Driver Name:Ch.Bhanu Murthy<br>
+                        Contact Number:9966258815<br>
+                        Faculty Incharge:Mr.E.V.R.J.Sastry<br>
+                        Contact Number:9966002828<br>
+                    </h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Boarding Point</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Penugonda</td>
+                                <td>7:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Materu</td>
+                                <td>7:10 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Brahmana cheruvu</td>
+                                <td>7:20 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Polamuru</td>
+                                <td>7:25 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Navudururu</td>
+                                <td>7:30 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Tokalapudi</td>
+                                <td>7:40 AM</td>
+                            </tr>
+                            <tr><td>Veeravasaram</td>
+                            <td>7:50 AM</td></tr>
+                            <tr>
+                                <td>Nandamurugaru</td>
+                                <td>7:55 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Srungavruksham</td>
+                                <td>8:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>pennada</td>
+                                <td>8:05 AM</td>
+                            </tr>
+                            <tr>
+                                <td>st.Mary's</td>
+                                <td>8:15 AM</td>
+                            </tr>
+                            <tr>
+                                <td>College Campus</td>
+                                <td>8:30 AM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="faqs">
+                <center><h2>Frequently Asked Questions (FAQs)</h2></center>
+                <div class="faq">
+                    <h3>1. How do I register for the bus service?</h3>
+                    <p>Registration for the bus service can be done during the college admission process. Existing students can contact the administrative office for more information.</p>
+                </div>
+                <div class="faq">
+                    <h3>2. What should I do if I miss the bus?</h3>
+                    <p>If you miss the bus, you can either arrange for your own transportation or catch the bus at the next boarding point, provided it is on the same route.</p>
+                </div>
+                <div class="faq">
+                    <h3>3. Are there any rules for bus conduct?</h3>
+                    <p>Yes, students are expected to maintain discipline and follow the bus rules and regulations to ensure safety and comfort for all passengers.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <center><h2>Contact Information</h2></center>
+                <p>For any quiries or assistance regarding the bus services, please feel free to contact our transport coordinator:Dr.Rangarao Orugu.</p>
+                <p>Phone:8978654259</p>
+                <p>Email: transport@vishnu.edu.in</p>
+                <p>Address: Vishnu Institute of Technology, Vishnupur, Bhimavaram, Andhra Pradesh, India</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Vishnu Institute of Technology. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleRoute(routeId) {
+            var routes = document.querySelectorAll('.route-details');
+            routes.forEach(function(route) {
+                route.classList.remove('active');
+            });
+
+            var selectedRoute = document.getElementById(routeId);
+            if (selectedRoute) {
+                selectedRoute.classList.add('active');
+            }
+
+            var routeHeaders = document.querySelectorAll('.route');
+            routeHeaders.forEach(function(header) {
+                header.classList.remove('active');
+            });
+
+            var selectedRouteHeader = document.querySelector("[onclick='toggleRoute(\"" + routeId + "\")']");
+            if (selectedRouteHeader) {
+                selectedRouteHeader.classList.add('active');
+            }
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();   
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

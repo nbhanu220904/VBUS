@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - College Bus Fee Payment</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: bolder; font-family: Playfair Display, serif;">College Bus Fee Payment Platform</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bus Fee Payment</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 style="font-weight: bolder; font-family: Playfair Display, serif; text-align: center;">Student Profile</h1>
+        <section class="account-info">
+            <div class="user-info">
+                <div class="studentImage">
+                    <img src="student3.jpg" width="300px" height="300px"> 
+                </div>
+                <div class="studentDetails">
+                    <p><strong>Admission.No:</strong> <span id="user-name">11615</span></p>
+                    <p><strong>RollNo:</strong> <span id="user-name">22PA1A12B4</span></p>
+                    <p><strong>Name:</strong> <span id="user-name">MUDDU VENKATA SAKETH</span></p>
+                    <p><strong>Course:</strong> <span id="user-name">B.Tech</span></p>
+                    <p><strong>Branch:</strong> <span id="user-name">Information Technology</span></p>
+                    <p><strong>Gender:</strong> <span id="user-name">Male</span></p>
+                    <p><strong>Email:</strong> <span id="user-email">22pa1a12b4@vishnu.edu.in</span></p>
+                    <p><strong>Phone:</strong> <span id="user-phone">7013230003</span></p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button onclick="showSection('fee-receipts')">Fee Receipts</button>
+                <button onclick="showSection('transactions')">Transactions</button>
+                <button onclick="showSection('status')">Status</button>
+            </div>
+            <div class="content-section" id="fee-receipts">
+                <h3>Fee Receipts</h3>
+                <div id="fee-receipts-body">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+            <div class="content-section" id="transactions">
+                <h3>Transactions</h3>
+                <div id="transactions-body">
+                    <!-- JavaScript will populate this -->
+                </div>
+            </div>
+            <div class="content-section" id="status">
+                <h3>Status</h3>
+                <p>Account status and other details will be displayed here.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; All rights reserved by Vishnu Institute of Technology, Vishnupur, Bhimavaram </p>
+        <p>Powered by Webpros Solutions Pvt Ltd., </p>
+    </footer>
+    <script src="profile.js"></script>
+</body>
+</html>
